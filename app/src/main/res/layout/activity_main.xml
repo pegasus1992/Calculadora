@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.edu.eci.cosw.calculadora.controllers.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textViewNum"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/colorAccent"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:cursorVisible="false"
+            android:numeric="signed|decimal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:background="@color/colorPrimary"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="5"
+            tools:context=".GridXMLActivity">
+
+            <Button
+                android:id="@+id/buttonSin"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_sin" />
+
+            <Button
+                android:id="@+id/buttonCos"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_cos" />
+
+            <Button
+                android:id="@+id/buttonTan"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_tan" />
+
+            <Button
+                android:id="@+id/buttonNum7"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/buttonNum8"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/buttonNum9"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_9" />
+
+            <Button
+                android:id="@+id/buttonNum4"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/buttonNum5"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/buttonNum6"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_6" />
+
+            <Button
+                android:id="@+id/buttonNum1"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/buttonNum2"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/buttonNum3"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_3" />
+
+            <Button
+                android:id="@+id/buttonNum0"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_0" />
+
+            <Button
+                android:id="@+id/buttonDot"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimary"
+                android:text="@string/_dot" />
+
+            <Button
+                android:id="@+id/buttonAC"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_AC" />
+        </GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:background="@color/colorPrimary"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            tools:context=".GridXMLActivity">
+
+            <Button
+                android:id="@+id/buttonDivide"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_divide" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_multiply" />
+
+            <Button
+                android:id="@+id/buttonLess"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_less" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_plus" />
+
+            <Button
+                android:id="@+id/buttonEquals"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_equals" />
+
+            <Button
+                android:id="@+id/buttonSign"
+                android:layout_gravity="fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_sign" />
+        </GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/guldan" />
+    </LinearLayout>
+
+</RelativeLayout>
