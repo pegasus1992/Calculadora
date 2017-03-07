@@ -181,7 +181,11 @@ public class MainActivity extends AppCompatActivity {
                                 resp = calc.division(resp, num);
                             }
                         } else {
-                            resp = Double.parseDouble(item);
+                            try {
+                                resp = Double.parseDouble(item);
+                            } catch (Exception ex) {
+                                ex.printStackTrace();
+                            }
                         }
                     }
                     String response = "" + resp;
